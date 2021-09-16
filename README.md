@@ -1,2 +1,2 @@
 # Generic-OCR
-Here we are trying too get a solution for generalising the **OCR** solution.
+Here we are trying to get a general the **OCR** solution for invoices and bills.
