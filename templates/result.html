@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Generic OCR</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/detections/result_style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Generic OCR</span>
+    </div>
+      <ul class="nav-links">
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Results</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <p style="color: #000;font-size: 20px;font-weight: 500">Click on the button to download the results<p>
+        <a href="../detections/ocr_output.txt" download="ocr_output">
+      <button style="background-color: #081D45;color: #fff;padding-left:20px;padding-right: 20px;" class="btn"><i class="fa fa-download"></i> Download</button>
+        </a>
+      <p style="color: black;font-weight: 500;font-size: 20px;">Click on the button to view the results<p>
+        <a href="../detections/ocr_output.txt" >
+      <button style="background-color: #081D45;color: #fff;padding-left:20px;padding-right: 20px;" class="btn"><i class="fa fa-download"></i> Results</button>
+        </a>
+      <h2>Detected Image</h2>
+      <img src="../detections/detection1.PNG" alt="Detected Image" width="500" height="500">
+      </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
