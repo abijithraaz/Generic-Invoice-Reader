@@ -11,4 +11,3 @@ pytesseract==0.3.8
 python-multipart==0.0.5
 tqdm==4.62.2
 uvicorn==0.15.0
-
