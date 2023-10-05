@@ -8,6 +8,10 @@ Its yolov4 based fastapi tesseract ocr solution.
 
 Full Code is avaialable here : [ClickHere](https://gitlab.com/abijithe61/yol-ov-4-tf-lite-for-generic-invoice-reader.git)
 
+## Run in local
+- Install all the dependencies ``` pip install requirement.txt ```
+- Run - ``` uvicorn main:app --realod ```
+
 ## Deployments
 Deployed the solution in huggingface Link : [ClickHere](https://huggingface.co/spaces/Abijith/Generic-Invoice-Reader)
 
